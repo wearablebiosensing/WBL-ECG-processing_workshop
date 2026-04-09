@@ -1,0 +1,78 @@
+# ============================================================
+# WBL ECG Processing Workshop — .gitignore
+# ============================================================
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+.claude/
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+
+# ── Virtual environments ──
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# ── IDE / Editor ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Large model weights (download separately) ──
+# RPNet model is ~196 MB — don't commit
+reference_codes/RPNet/model.pt
+
+# ── Large data files ──
+# Sample data is needed for the workshop; keep tracked
+# But exclude any user-added large files
+*.acq
+*.edf
+*.mat
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.pdf
+*.csv
+*.txt
+
+# ── Output artifacts (regenerated at runtime) ──
+# Keep outputs/ tracked for workshop reference plots
+# but exclude user-generated analysis exports
+outputs/**/*.csv
+!outputs/.gitkeep
+
+# ── ecg_analysis exports ──
+analysis_output/
+*.analysis.csv
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Logs ──
+*.log
+
+# ── Temporary files ──
+*.tmp
+*.bak
+
+*.orig

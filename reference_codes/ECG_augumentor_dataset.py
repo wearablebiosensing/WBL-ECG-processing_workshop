@@ -1,6 +1,4 @@
 # %%
-!pip install resampy
-
 # %%
 # %% [markdown]
 # # ECG WebDataset Generator (v10) - With Massive Jitter & Full Augmentation Tracking

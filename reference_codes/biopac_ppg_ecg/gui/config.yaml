@@ -1,0 +1,21 @@
+detectors:
+  ecg_default: neurokit
+  ppg_default: msptd
+fs_analysis: 250
+sqi:
+  delta_hr_bpm: 15.0
+  ecg:
+    rules:
+      min_kurtosis: 3.0
+      min_rel_power: 0.3
+      min_snr_db: 0.0
+    sqi_score_min: 0.45
+  ppg:
+    rules:
+      max_entropy: 6.0
+      min_entropy: 0.0
+      min_rel_power: 0.4
+      min_skew_abs: 0.2
+    sqi_score_min: 0.45
+window_size_sec: 10
+window_step_sec: 5
