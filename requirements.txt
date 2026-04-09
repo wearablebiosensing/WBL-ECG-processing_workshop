@@ -1,0 +1,41 @@
+# ============================================================
+# WBL ECG Processing Workshop — Requirements
+# ============================================================
+# Install:  pip install -r requirements.txt
+#
+# For CUDA-accelerated RPNet:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   (or cu118/cu124 depending on your CUDA version)
+#
+# For wavelet denoising (optional):
+#   pip install ssqueezepy pywt
+# ============================================================
+
+# Core
+
+numpy>=1.22
+pandas>=1.4
+scipy>=1.8
+matplotlib>=3.5
+seaborn>=0.12
+
+# GUI (gui.py)
+PyQt6>=6.4
+pyqtgraph>=0.13.1
+
+# ECG processing
+neurokit2>=0.2.4
+wfdb>=4.0
+
+# Deep learning (RPNet) — CPU by default, see note above for CUDA
+torch>=1.10
+
+# Progress bars
+tqdm>=4.60
+
+# Optional: interactive plotting
+# plotly>=5.0
+
+# Wavelet denoising and Interactive Scalograms
+ssqueezepy>=0.6
+PyWavelets>=1.3
